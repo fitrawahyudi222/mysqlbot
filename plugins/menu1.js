@@ -4,6 +4,7 @@ let path = require('path')
 const { from } = require('responselike')
 let levelling = require('../lib/levelling')
 let moment = require('moment-timezone')
+
 let tags = {
     'main': 'Main'
 }
@@ -33,6 +34,7 @@ Please Dont Click Readmore
 ${'```%npmdesc```'}
 `
 }
+
 let handler = async (m, { conn, usedPrefix: _p }) => {
    // conn.fakeReply(m.chat, '0@s.whatsapp.net', '*BOT TERVERIFIKASI*', 'status@broadcast')
     await conn.fakeReply(m.chat, '*[❗] LOADING．．．*', '0@s.whatsapp.net', `*Gunakan Bot dengan Bijak*`)
@@ -135,7 +137,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
         text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
         // conn.reply(m.chat, text.trim(), m)
         //conn.sendButton(m.chat, text.trim(), 'Click This', '🏡 ALL MENU', '.allmenu', '☕ Owner', '.owner')
-        await conn.send3Button(m.chat, text.trim(), '© made with by fwd', '🏡 LIST MENU', '.menu', '☕DONASI', '.donasi', '👨🏼‍💻 OWNER', '.owner' ,m)
+        await conn.send3Button(m.chat, text.trim(), '© made with by fwd', '🏡 LIST MENU', '.menu', '☕IKLAN', '.iklan', '👨🏼‍💻 OWNER', '.owner' ,m)
     } catch (e) {
         conn.reply(m.chat, 'Maaf, menu sedang error', m)
         throw e

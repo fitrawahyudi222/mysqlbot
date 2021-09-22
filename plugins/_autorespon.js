@@ -14,7 +14,7 @@ handler.all = async function (m, { isBlocked }) {
     try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
             await this.send2Button(m.chat,
-                isBanned ? 'stikerin tidak aktif' : banned ? 'kamu dibanned' : 'stikerin disini',
+                isBanned ? 'mysql tidak aktif' : banned ? 'kamu dibanned' : 'mysql disini',
                 '© fwd',
                 isBanned ? 'UNBAN' : banned ? 'PEMILIK BOT' : 'MENU',
                 isBanned ? '.unban' : banned ? '.owner' : '.?',
@@ -43,13 +43,13 @@ https://instagram.com/f.w.dalimunthe
         let res = fs.readFileSync('./audio/salam.mp3')
         await conn.sendFile(m.chat, res, 'eror.mp3', '', m, 1, { mimetype: 'audio/mp4' })
     }   
-    // //salam
-    // let ser = /(Bot|bot|p|P)/i
-    // let isBudayakan = ser.exec(m.text)
-    // if (isBudayakan && !m.fromMe) {
-    //     let res = fs.readFileSync('./audio/budayakan.mp3')
-    //     await conn.sendFile(m.chat, res, 'eror.mp3', '', m, 1, { mimetype: 'audio/mp4' })
-    // }
+    //salam
+    let ser = /(Bot|bot)/i
+    let isBudayakan = ser.exec(m.text)
+    if (isBudayakan && !m.fromMe) {
+        let res = fs.readFileSync('./audio/here.mp3')
+        await conn.sendFile(m.chat, res, 'eror.mp3', '', m, 1, { mimetype: 'audio/mp4' })
+    }
 
     // backup db
     if (setting.backup) {

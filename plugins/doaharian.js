@@ -22,7 +22,7 @@ _"${translation}"_
     await m.reply(caption)
 }
 handler.help = ['doaharian']
-handler.tags = ['islam']
+handler.tags = ['islami']
 handler.command = /^(doaharian)$/i
 
 module.exports = handler

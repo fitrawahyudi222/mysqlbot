@@ -31,8 +31,8 @@ let handler = async (m, { conn, usedPrefix: _p }) => m.reply(`
 ┣➥ *DANA:* [0856-6901-1805]
 ┗━━━━━━━━━━━━━━━━
 `.trim() )
-let res = fs.readFileSync('./audio/botchat.mp3')
-  await conn.sendFile(m.chat, res, 'eror.mp3', '', m, 1, { mimetype: 'audio/mp4' }) // Tambah sendiri kalo mau
+// let res = fs.readFileSync('./audio/botchat.mp3')
+//   await conn.sendFile(m.chat, res, 'eror.mp3', '', m, 1, { mimetype: 'audio/mp4' }) // Tambah sendiri kalo mau
 handler.help = ['rules'] 
 handler.tags = ['jj'] 
 handler.command = /^(rules)$/i
