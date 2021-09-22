@@ -4,7 +4,7 @@ let axios = require("axios");
 let handler = async(m, { conn, text }) => {
 
   await m.reply('Searching...')
-    axios.get('https://lolhuman.herokuapp.com/api/ceritahoror?apikey=31caf10e4a64e86c1a92bcba')
+    axios.get('https://lolhuman.herokuapp.com/api/ceritahoror?apikey=fwd201104')
     .then((res) => {
       imageToBase64(res.data.result.thumbnail)
         .then(

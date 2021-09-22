@@ -16,7 +16,7 @@ let handler = async (m, { conn }) =>
                         }, {
                             "title": "Game",
                             "description": "Menampilkan menu Game",
-                            "rowId": ".gamemenu"                       
+                            "rowId": ".gamesmenu"                       
                         }
                     ]
                 }

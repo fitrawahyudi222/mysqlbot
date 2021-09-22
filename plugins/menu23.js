@@ -307,31 +307,9 @@ let handler = async (m, { conn, usedPrefix: _p, command, args }) => {
     let rtotalreg = 0
     rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length
     let tags = {
-      'main': 'Utama',
-    'game': 'Game',
-    'rpg': 'Adventure Menu (NEW)',
-    'xp': 'Exp & Limit',
-    'sticker': 'Stiker',
-    'kerang': 'Kerang Ajaib',
-    'quotes': 'Quotes',
-    'admin': `Admin ${global.opts['restrict'] ? '' : '(Dinonaktifkan)'}`,
-    'group': 'Grup',
-    'premium': 'Premium',
-    'internet': 'Internet',
-    'anonymous': 'Anonymous Chat',
-    'nulis': 'MagerNulis & Logo',
-    'downloader': 'Downloader',
-    'tools': 'Tools',
-    'fun': 'Fun',
-    'db': 'db',
-    'vote': 'Voting',
-    'absen': 'Absen',
-    'islami': 'Islami',
-    'audio': 'Pengubah Suara',
+   
     'jadibot': 'Jadi Bot',
-    'info': 'Info',
-    'videomaker':'Video Maker',
-    '': 'Tanpa Kategori',
+   
 
     }
     for (let plugin of Object.values(global.plugins))
@@ -513,9 +491,9 @@ ${petik}Im ${conn.getName(conn.user.jid)} And You Use Prefix %p${petik}
 
 }
 
-handler.help = ['allmenu']
-handler.tags = ['jjj']
-handler.command = ['allmenu']
+handler.help = ['jadibotmenu']
+handler.tags = ['jj']
+handler.command = ['jadibotmenu']
 handler.owner = false
 handler.mods = false
 handler.premium = false

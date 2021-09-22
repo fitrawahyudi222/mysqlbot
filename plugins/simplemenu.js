@@ -25,20 +25,34 @@ let handler = async (m, { conn, usedPrefix }) => {
 ┃•  *Level :* ${level}
 ┃•  *Nomor :* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
 ┃•  *Api Whatsapp :* wa.me/${who.split`@`[0]}
-┃•  *Terdaftar :* ${registered ? 'Yes': 'No'}
+┃•  *Terdaftar :* ${registered ? '✅' : '❌'}
 ┃
-┣━━°❀❬ *KERANG MENU* ❭❀°━━┓
+┣━━°❀❬ *SIMPLE MENU* ❭❀°━━┓
 ┃
-┣➥ *apakah <teks>?*
-┣➥ *${usedPrefix}apakah <pertanyaan>*
-┣➥ *bisakah <teks>?*
-┣➥ *${usedPrefix}bisakah <pertanyaan>*
-┣➥ *kapan <text>?*
-┣➥ *kapankah <text>?*
-┣➥ *${usedPrefix}kapankah <pertanyaan>#
-┣➥ *siapa <pertanyaan>?*
-┣➥ *siapakah <pertanyaan>?*
-┣➥ *${usedPrefix}siapakah <pertanyaan>*
+┣➥ *${usedPrefix}gamemenu*
+┣➥ *${usedPrefix}adventuremenu*
+┣➥ *${usedPrefix}xpmenu*
+┣➥ *${usedPrefix}stikermenu*
+┣➥ *${usedPrefix}kerangmenu*
+┣➥ *${usedPrefix}quotesmenu*
+┣➥ *${usedPrefix}adminmenu*
+┣➥ *${usedPrefix}groupmenu*
+┣➥ *${usedPrefix}premiummenu*
+┣➥ *${usedPrefix}internetmenu*
+┣➥ *${usedPrefix}anonymousmenu*
+┣➥ *${usedPrefix}nulismenu*
+┣➥ *${usedPrefix}downloadermenu*
+┣➥ *${usedPrefix}funmenu*
+┣➥ *${usedPrefix}toolsmenu*
+┣➥ *${usedPrefix}databasemenu*
+┣➥ *${usedPrefix}votingmenu*
+┣➥ *${usedPrefix}absenmenu*
+┣➥ *${usedPrefix}islamimenu*
+┣➥ *${usedPrefix}pengubahsuara <VN>*
+┣➥ *${usedPrefix}jadibotmenu*
+┣➥ *${usedPrefix}infomenu*
+┣➥ *${usedPrefix}videomaker'*
+┣➥ *${usedPrefix}tanpakategori*
 ┃ 
 ┗━━━━━━━━━━━━━━━━
 `.trim()
@@ -46,14 +60,15 @@ let handler = async (m, { conn, usedPrefix }) => {
     conn.sendFile(m.chat, pp, 'lp.jpg', str, m, false, { contextInfo: { mentionedJid }})
   }
 }
-handler.help = ['kerangmenu']
+handler.help = ['simplemenu']
 handler.tags = ['jj']
-handler.command = /^(kerangmenu)$/i
+handler.command = /^(simplemenu)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
 handler.group = false
 handler.private = false
+handler.register = true
 
 handler.admin = false
 handler.botAdmin = false

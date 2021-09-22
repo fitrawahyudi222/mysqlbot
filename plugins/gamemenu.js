@@ -87,7 +87,7 @@ let handler = async (m, { conn }) =>
         }
     }, {}), { waitForAck: true })
 
-handler.command = ['gamemenu']
+handler.command = ['gamesmenu']
 module.exports = handler
 handler.tags = ['jj']
 handler.owner = false
