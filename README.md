@@ -1,12 +1,13 @@
 <p align="center">
-	<img src="https://i.ibb.co/jr9Nh6Q/Thumb.jpg" width="35%" style="margin-left: auto;margin-right: auto;display: block;">
+	<img src="https://i.ibb.co/1GtbLyk/brual.jpg" width="35%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
-<h1 align="center">stikerinbot</h1>
+<h1 align="center">Mysqlbot</h1>
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ariffb25/stikerinbot)
 
-[![Grup WhatsApp](https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/GVwpKf83s42D1CnIfDW19G)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/fitrawahyudi222/mysqlbot)
+
+[![Grup WhatsApp](https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/CAQrDVQJPki2whgWU9SDwn)
 
 ## UNTUK PENGGUNA WINDOWS/VPS/RDP
 
@@ -16,8 +17,8 @@
 * Unduh & Instal ImageMagick [`Klik Disini`](https://imagemagick.org/script/download.php)
 
 ```bash
-git clone https://github.com/ariffb25/stikerinbot
-cd stikerinbot
+git clone https://github.com/fitrawahyudi222/mysqlbot
+cd mysqlbot
 npm install
 npm update
 npm index
@@ -50,16 +51,6 @@ Setel awalan
 ### `--server`
 
 Digunakan untuk [heroku](https://heroku.com/) atau pindai melalui situs web
-
-### `--db <json-server-url>`
-
-Gunakan db eksternal alih-alih db lokal, 
-Contoh Server `https://json-server.nurutomo.repl.co/`
-Code: `https://repl.it/@Nurutomo/json-server`
-
-`node . --db 'https://json-server.nurutomo.repl.co/'`
-
-Server harus memiliki spesifikasi seperti ini
 
 #### GET
 
