@@ -7,7 +7,7 @@ let handler  = async (m, { command, conn, text }) => {
     text,
     nama: conn.getName(m.sender),
     kelas: ' '
-  }, 'APIKEY'), 'nulis.jpg', 'Awas,Ntar Ketahuan Bu Sri :v', m)
+  }, 'APIKEY'), 'nulis.jpg', 'Awas Ketahuan Bu Srii:v', m)
 }
 handler.help = new Array(6).fill('magernulis').map((v, i) => v + (i + 1) + ' <teks>')
 handler.tags = ['nulis']
