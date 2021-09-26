@@ -43,13 +43,13 @@ https://instagram.com/f.w.dalimunthe
         let res = fs.readFileSync('./audio/salam.mp3')
         await conn.sendFile(m.chat, res, 'eror.mp3', '', m, 1, { mimetype: 'audio/mp4' })
     }   
-    //salam
-    let ser = /(Bot|bot)/i
-    let isBudayakan = ser.exec(m.text)
-    if (isBudayakan && !m.fromMe) {
-        let res = fs.readFileSync('./audio/here.mp3')
-        await conn.sendFile(m.chat, res, 'eror.mp3', '', m, 1, { mimetype: 'audio/mp4' })
-    }
+    // //salam
+    // let ser = /(Bot|bot)/i
+    // let isBudayakan = ser.exec(m.text)
+    // if (isBudayakan && !m.fromMe) {
+    //     let res = fs.readFileSync('./audio/here.mp3')
+    //     await conn.sendFile(m.chat, res, 'eror.mp3', '', m, 1, { mimetype: 'audio/mp4' })
+    // }
 
     // backup db
     if (setting.backup) {
