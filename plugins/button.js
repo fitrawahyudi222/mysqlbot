@@ -40,6 +40,10 @@ let handler = async (m, { conn }) =>
                             "description": "I Want To Use Game Menu",
                             "rowId": ".gamesmenu"
                         }, {
+                            "title": "Group Setting",
+                            "description": "I Want To Use Adventure Menu",
+                            "rowId": ".group"
+                        }, {
                             "title": `Ephemeral Setting`,
                             "description": "I Want To Use Ephemeral",
                             "rowId": ".ephemeralmenu"
@@ -153,6 +157,6 @@ let handler = async (m, { conn }) =>
             }
         }
     }, {}), { waitForAck: true })
-handler.command = ['menu']
+handler.command = ['listmenu']
 handler.register = true
 module.exports = handler

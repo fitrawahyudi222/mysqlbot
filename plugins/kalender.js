@@ -27,7 +27,7 @@ gay = `sayang`
   }
 }
 handler.help = ['kalender (reply)']
-handler.tags = ['editor']
+handler.tags = ['tools']
 handler.command = /^kalender$/i
 handler.owner = false
 handler.mods = false

@@ -15,6 +15,7 @@ global.APIs = { // API Prefix
   zahir: 'https://zahirr-web.herokuapp.com',
   zekais: 'http://zekais-api.herokuapp.com',
   zeks: 'https://api.zeks.xyz',
+  lol: 'https://api.lolhuman.xyz'
 }
 global.APIKeys = { // APIKey nya disini
   // 'https://website': 'apikey'
@@ -25,7 +26,7 @@ global.APIKeys = { // APIKey nya disini
   'https://api.xteam.xyz': 'HIRO',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://api.zeks.xyz': 'apivinz',
-  'https://api.lolhuman.xyz':'fwd201104',
+  'https://api.lolhuman.xyz':'ed8c62882b76205356a1e311',
 }
 
 // Sticker WM
