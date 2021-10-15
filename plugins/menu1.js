@@ -145,7 +145,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
 }
 
 handler.tags = ['ks']
-handler.command = /^(bot)$/i
+handler.command = /^(bot|help)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
