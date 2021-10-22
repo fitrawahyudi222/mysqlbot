@@ -265,6 +265,7 @@ let handler = async (m, { conn, usedPrefix: _p, command, args }) => {
     })
     const wita = moment.tz('Asia/Makassar').format("HH:mm:ss")
     const wit = moment.tz('Asia/Jayapura').format("HH:mm:ss")
+    const jam = moment.tz('Asia/Jakarta').format("HH:mm:ss");
     const lebaran = new Date ('May 1, 2022 23:59:59')
     const sekiring = new Date().getTime()
     const seleseh = lebaran - sekiring
@@ -337,7 +338,7 @@ ${petik}Im ${conn.getName(conn.user.jid)} And You Use Prefix %p${petik}
 
 ❏ Ｉｎｆｏ Ｂｏｔ
 ❏ Bot Name : ${conn.getName(conn.user.jid)} 
-❏ Ulang Tahun Owner : ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik 
+
 ❏ Browser : ${conn.browserDescription[1]} 
 ❏ Wa Web Name : ${conn.browserDescription[0]} 
 ❏ Wa Web Version : ${conn.browserDescription[2]} 
@@ -348,7 +349,6 @@ ${petik}Im ${conn.getName(conn.user.jid)} And You Use Prefix %p${petik}
 ❏ Seri Phone : ${conn.user.phone.device_model} 
 ❏ Version : %version 
 ❏ Battery : %battery
-❏ Battery Bars : ${zerobars}
 ❏ Speed : ${neww} ms 
 ❏ Total Features : 1200+ 
 
@@ -382,7 +382,7 @@ ${petik}Im ${conn.getName(conn.user.jid)} And You Use Prefix %p${petik}
 ❏ Tahun Baru : ${jhari} Hari ${jjam} Jam ${mmmenit} Menit ${ddetik} Detik Lagi
 ❏ Idul Fitri 2022 :  ${jjhari} Hari ${jjjam} Jam ${mmmmenit} Menit ${dddetik} Detik Lagi
 ❏ Islamic Date : ${dateIslamic} 
-❏ Time : %time WIB 
+❏ Time : ${jam} WIB 
 ❏ Time : ${wit} WIT 
 ❏ Time : ${wita} WITA 
 
@@ -447,7 +447,7 @@ ${petik}Im ${conn.getName(conn.user.jid)} And You Use Prefix %p${petik}
 
       github: package.homepage ? package.homepage.url || package.homepage : '[unknown github url]',
 
-      level, limit, name, weton, week, date, time, totalreg, totalgc, rtotalreg, role, healt, money, coin, tigame, sn, battery,
+      level, limit, name,jam, weton, week, date, time, totalreg, totalgc, rtotalreg, role, healt, money, coin, tigame, sn, battery,
 
       readmore: readMore
 

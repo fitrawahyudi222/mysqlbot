@@ -18,7 +18,7 @@ Saya %me
 UserName : %name
 Uptime : %uptime
 Total Features : 1200+
-Waktu : *%time* WIB
+Waktu : *%jam* WIB
 Waktu : *%wita* WITA
 Waktu : *%wit* WIT
 
@@ -61,6 +61,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
             month: 'long',
             year: 'numeric'
         }).format(d)
+        let jam = moment.tz('Asia/Jakarta').format("HH:mm:ss");
         let wita = moment.tz('Asia/Makassar').format("HH:mm:ss")
         let wit = moment.tz('Asia/Jayapura').format("HH:mm:ss")
         let time = d.toLocaleTimeString(locale, {
@@ -131,7 +132,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
             totalexp: exp,
             xp4levelup: max - exp <= 0 ? `Siap untuk *${_p}levelup*` : `${max - exp} XP lagi untuk levelup`,
             github: package.homepage ? package.homepage.url || package.homepage : '[unknown github url]',
-            level, limit, name, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,wita,wit,
+            level, limit, name, jam, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,wita,wit,
             readmore: readMore
         }
         text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
@@ -171,7 +172,7 @@ function clockString(ms) {
     return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
 }
 function ucapan() {
-    const time = moment.tz('Asia/Jakarta').format('HH')
+    const time = moment.tz('Asia/Jakarta').format("HH");
     res = "Selamat dinihari"
     if (time >= 4) {
         res = "Selamat pagi"

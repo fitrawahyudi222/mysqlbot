@@ -1,9 +1,11 @@
 
 // let { MessageType } = require('@adiwajshing/baileys')
+// const fs = require("fs");
+// let fetch = require('node-fetch')
 // let handler = async (m, { conn, text }) => {
 //   let nani = 'https://telegra.ph/file/0ee3b8764de7285d66724.jpg'
 //   let chats = conn.chats.all().filter(v => !v.read_only && v.message && !v.archive).map(v => v.jid)
-//   let content = conn.send2ButtonLoc(m.chat, await (await fetch(nani)).buffer(), text.trim(), '', '⋮☰ LIST  FITUR', '.menu', '⋮☰ OWNER', '.owner', m)
+//   let content = conn.send2ButtonLoc(m.chat, await (await fetch(nani)).buffer(), text.trim(), '', '⋮☰ LIST  FITUR', '.bot', '⋮☰ OWNER', '.owner', m)
 //   for (let id of chats) conn.copyNForward(id, content, true)
 //   conn.reply(m.chat, `_Mengirim pesan broadcast ke ${chats.length} chat_`, m)
 // }
@@ -35,7 +37,8 @@ let handler = async (m, { conn, text }) => {
   for (let id of chats) {
     await delay(1500)
     await conn.copyNForward(id, conn.cMod(m.chat, cc, /bc|broadcast/i.test(teks) ? teks : '〔 Mysql Broadcast 〕\n\n' + teks + '\n' + readMore + randomID(32)), true).catch(_ => _)
-  }
+    }
+  await conn.sendButton(m.chat, text.trim(), 'fwd', '⋮☰ LIST  FITUR', '.bot', m)
   m.reply('_*Broadcast Selesai*_')
 }
 handler.help = ['broadcast', 'bc'].map(v => v + ' <teks>')

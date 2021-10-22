@@ -6,7 +6,7 @@ let fs = require('fs')
 let package = require('./package.json')
 const CFonts = require('cfonts')
 CFonts.say('Mysql Bot', {
-  colors: ['red'],
+  colors: ['green'],
   font: 'block',
   align: 'center',
 })

@@ -29,6 +29,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 ┃
 ┣━━°❀❬ *SIMPLE MENU* ❭❀°━━┓
 ┃
+┣➥ *${usedPrefix}listmenu*
 ┣➥ *${usedPrefix}gamemenu*
 ┣➥ *${usedPrefix}adventuremenu*
 ┣➥ *${usedPrefix}xpmenu*
@@ -60,15 +61,15 @@ let handler = async (m, { conn, usedPrefix }) => {
     conn.sendFile(m.chat, pp, 'lp.jpg', str, m, false, { contextInfo: { mentionedJid }})
   }
 }
-handler.help = ['simplemenu']
+handler.help = ['help']
 handler.tags = ['jj']
-handler.command = /^(simplemenu)$/i
+handler.command = /^(help|.|?|!)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
 handler.group = false
 handler.private = false
-handler.register = true
+handler.register = false
 
 handler.admin = false
 handler.botAdmin = false
