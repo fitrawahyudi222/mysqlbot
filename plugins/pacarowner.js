@@ -1,5 +1,5 @@
 function handler(m) {
-    this.sendContact(m.chat, '6281260315127', this.getName('6281260315127@s.whatsapp.net'), m)
+    this.sendContact(m.chat, '6283839326178', this.getName('6283839326178@s.whatsapp.net'), m)
     conn.reply(m.chat, `Tuh Gebetan Ku Jangan Galak² Ya >_<, Nanti Ku Banned Nanges`, m)
 }
 handler.help = ['pacarowner']

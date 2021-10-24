@@ -8,7 +8,7 @@ let cita = arr[Math.floor(Math.random() * arr.length)]
 conn.sendFile(m.chat, cita, 'asupan.mp4', 'Nih kak asupan nya!!', m, false, { contextInfo: { forwardingScore: 999, isForwarded: true }}) 
 }
 
-handler.tags = ['video']
+handler.tags = ['fun']
 handler.help = ['asupan']
 handler.command = /^(asupan)$/i
 handler.limit = true

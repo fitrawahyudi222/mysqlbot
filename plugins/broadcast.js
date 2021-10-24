@@ -38,7 +38,7 @@ let handler = async (m, { conn, text }) => {
     await delay(1500)
     await conn.copyNForward(id, conn.cMod(m.chat, cc, /bc|broadcast/i.test(teks) ? teks : '〔 Mysql Broadcast 〕\n\n' + teks + '\n' + readMore + randomID(32)), true).catch(_ => _)
     }
-  await conn.sendButton(m.chat, text.trim(), 'fwd', '⋮☰ LIST  FITUR', '.bot', m)
+  await conn.sendButton(m.chat, teks.trim(), 'fwd', '⋮☰ LIST  FITUR', '.bot', m)
   m.reply('_*Broadcast Selesai*_')
 }
 handler.help = ['broadcast', 'bc'].map(v => v + ' <teks>')
