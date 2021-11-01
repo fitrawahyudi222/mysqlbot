@@ -27,13 +27,14 @@ global.APIKeys = { // APIKey nya disini
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://api.zeks.xyz': 'apivinz',
   'https://api.lolhuman.xyz':'ed8c62882b76205356a1e311',
+  'http://zekais-api.herokuapp.com': 'iKW3Zw3N',
 }
 
 // Sticker WM
 global.packname = 'Mysql Bot Wa'
 global.author = 'F.W.D'
 
-global.wait = 'tunggu beberapa bulan\n\nTapi boong:v'
+global.wait = 'Wait sedang di proses ....'
 
 global.eror = '_*Server Error*_'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
