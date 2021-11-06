@@ -10,7 +10,7 @@ let handler = async (m, { conn, text }) => {
 
   } finally {
     let username = conn.getName(who)
-    let str = `Nihh PPnya @${who.replace(/@.+/, '')}`
+    let str = `Nihh PPnya coeg @${who.replace(/@.+/, '')}`
     let mentionedJid = [who]
 
     conn.sendFile(m.chat, pp, 'pp.jpg', str, m, false, { contextInfo: { mentionedJid }})
