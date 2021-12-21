@@ -279,7 +279,7 @@ let handler = async (m, { conn, usedPrefix: _p, command, args }) => {
     const jjam = Math.floor(Selisih % (1000 * 60 * 60 * 24) / (1000 * 60 * 60))
     const mmmenit = Math.floor(Selisih % (1000 * 60 * 60) / (1000 * 60))
     const ddetik = Math.floor(Selisih % (1000 * 60) / 1000)
-    const ultah = new Date('November 19, 2021 23:59:59')
+    const ultah = new Date('November 19, 2022 23:59:59')
     const sekarat = new Date().getTime()
     const Kurang = ultah - sekarat
     const ohari = Math.floor(Kurang / (1000 * 60 * 60 * 24));
