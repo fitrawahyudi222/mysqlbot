@@ -356,7 +356,7 @@ let handler = async (m, { conn, usedPrefix: _p, command, args }) => {
     conn.menu = conn.menu ? conn.menu : {}
     let before = conn.menu.before || `
 ${petik}Hello %name${petik} 
-${petik}Im ${conn.getName(conn.user.jid)} And You Use Prefix %p${petik} 
+${petik}Im ${conn.getName(conn.user.jid)} And You Use Prefix [%p]${petik} 
 
 ❏ Ｉｎｆｏ Ｂｏｔ
 ❏ Bot Name : ${conn.getName(conn.user.jid)} 
@@ -379,7 +379,7 @@ ${petik}Im ${conn.getName(conn.user.jid)} And You Use Prefix %p${petik}
 ❏ Ｉｎｆｏ Ｕｓｅｒ
 ❏ UserName : %name 
 ❏ Serial Number : ${sn} 
-❏ Prefix : %p  
+❏ Prefix : [%p]
 ❏ Mention : @${m.sender.replace(/@.+/, '')} 
 ❏ Age : ${registered ? '' + age : ''} 
 ❏ Phone Number : ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')} 

@@ -4,6 +4,7 @@ global.mods = [] // Moderator?
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Pengguna premium tidak memerlukan limit
 global.APIs = { // API Prefix
   // nama: 'https://website'
+  amel: 'https://melcanz.com',
   bx: 'https://bx-hunter.herokuapp.com',
   dhnjing: 'https://dhnjing.xyz',
   hardianto: 'https://hardianto-chan.herokuapp.com',
@@ -15,10 +16,12 @@ global.APIs = { // API Prefix
   zahir: 'https://zahirr-web.herokuapp.com',
   zekais: 'http://zekais-api.herokuapp.com',
   zeks: 'https://api.zeks.xyz',
-  lol: 'https://api.lolhuman.xyz'
+  lol: 'https://api.lolhuman.xyz',
+  LeysCoder: 'https://leyscoders-api.herokuapp.com'
 }
 global.APIKeys = { // APIKey nya disini
   // 'https://website': 'apikey'
+  'https://melcanz.com': 'scocXJYP',
   'https://bx-hunter.herokuapp.com': 'Ikyy69',
   'https://hardianto-chan.herokuapp.com': 'hardianto',
   'https://neoxr-api.herokuapp.com': 'yntkts',
@@ -28,6 +31,7 @@ global.APIKeys = { // APIKey nya disini
   'https://api.zeks.xyz': 'apivinz',
   'https://api.lolhuman.xyz':'ed8c62882b76205356a1e311',
   'http://zekais-api.herokuapp.com': 'iKW3Zw3N',
+  'https://leyscoders-api.herokuapp.com': 'MIMINGANZ',
 }
 
 // Sticker WM

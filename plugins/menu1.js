@@ -137,7 +137,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
         }
         text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
         // conn.reply(m.chat, text.trim(), m)
-    conn.send2Button(m.chat, text.trim(), 'Click This', '🏡 LIST MENU', '.listmenu', '☕ OWNER', '.owner')
+        conn.send3Button(m.chat, text.trim(), 'Click This', '📋 Rules','.rules','🏡 LIST MENU', '.listmenu', '☕ OWNER', '.owner')
         
     } catch (e) {
         conn.reply(m.chat, 'Maaf, menu sedang error', m)
